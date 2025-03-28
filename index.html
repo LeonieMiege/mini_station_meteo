@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Station Meteo</title>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="weather-container">
         <div class="city-search">
             <input type="text" id="cityInput" placeholder="Entrez un nom de ville">
-            <button>OK</button>
+            <button id="searchButton">OK</button>
         </div>
-        <h1 id="city">Chargement...</h1>
+        <h1 id="city"></h1>
         <div id="gps"></div>
         <div id="temperature">-°C</div>
         <div id="details">Mise à jour en cours...</div>
